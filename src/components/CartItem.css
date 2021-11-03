@@ -1,0 +1,33 @@
+.card {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 2rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    margin-bottom: 1rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--clr-grey-5);
+    padding: .7rem .2rem;
+}
+
+.cart-desc {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 150px;
+}
+
+.cart-desc h4 {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+}
+
+.btn-cart {
+    width: 100px;
+    padding: .3rem .15rem;
+}
