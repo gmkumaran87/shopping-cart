@@ -27,7 +27,7 @@ const data = [{
         amount: 1,
     },
     {
-        id: 4,
+        id: 5,
         title: "iPhone 13",
         price: 70000,
         img: "https://res.cloudinary.com/gmkumaran87/image/upload/v1635917192/Apple_iPhone-13-Pro_iPhone-13-Pro-Max_09142021_c4vkam.jpg",

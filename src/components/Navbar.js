@@ -4,6 +4,7 @@ import { BsCart } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = ({ count }) => {
+  console.log("Count of Cart", count);
   const handleClick = (e) => {
     console.log(e.target);
     const navBar = document.querySelector(".nav-bar-collapse");
@@ -31,11 +32,8 @@ const Navbar = ({ count }) => {
         </ul>
         <button type="button" className="btn cart-btn">
           <BsCart className="cart" />
-
-          <span> Your Cart </span>
-          <span data-id="nav" className="item-cnt">
-            {count}
-          </span>
+          <p>Cart</p>
+          <div className="item-cnt">{count}</div>
         </button>
       </div>
     </nav>

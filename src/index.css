@@ -93,7 +93,15 @@ p {
 
 .App {
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
+}
+
+.btn-container {
+    margin: 1rem auto;
+}
+
+.btn-clr {
+    padding: .35rem .75rem;
 }

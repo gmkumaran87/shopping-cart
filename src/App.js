@@ -32,7 +32,7 @@ function App() {
         if (el.id === Number(btn.id)) {
           console.log(el);
           el.isClicked = true;
-          el.btnValue = "Remove from Cart";
+          el.btnValue = "Remove Cart";
         }
         return el;
       });
@@ -58,13 +58,15 @@ function App() {
     <div className="App">
       <Navbar count={itemCount} />
       <CartItems items={cartObj} handleClick={addToCart} />
-      <Button
-        id="clear-btn"
-        classes="btn-clr"
-        handleClick={clearCart}
-        disable="false"
-        title="Clear the Cart"
-      />
+      <div className="btn-container">
+        <Button
+          id="clear-btn"
+          classes="btn-clr"
+          handleClick={clearCart}
+          disable={false}
+          title="Clear the Cart"
+        />
+      </div>
     </div>
   );
 }
